@@ -28,7 +28,7 @@ void Display() {
 };
 
 
- int MainClass::a ; 
+ int MainClass::a ;  //Outside that Class, it is compulsary to Initialize those static variables
  int MainClass::b ; 
 
  int main() {
@@ -36,7 +36,7 @@ void Display() {
     MainClass m1,m2;
    
 
-m1.SetValues(10, 20);    
+m1.SetValues(10, 20);   //Just Update those static variables once and it will work for all member of the class that contain those Static Variable/s  
 m1.Display();
 m2.Display();
 
